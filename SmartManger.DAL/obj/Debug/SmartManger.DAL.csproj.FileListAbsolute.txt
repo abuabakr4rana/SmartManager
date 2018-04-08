@@ -1,0 +1,14 @@
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManger.DAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManger.DAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.csprojResolveAssemblyReference.cache
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManager.Models.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManger.DAL.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManger.DAL.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManager.Models.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\bin\Debug\SmartManager.Models.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.csprojResolveAssemblyReference.cache
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger.DAL\obj\Debug\SmartManger.DAL.pdb

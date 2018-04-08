@@ -1,0 +1,9 @@
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManger.BAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManger.BAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManger.DAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManager.Models.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\bin\Release\SmartManger.DAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\obj\Release\SmartManger.BAL.csprojResolveAssemblyReference.cache
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\obj\Release\SmartManger.BAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger.BAL\obj\Release\SmartManger.BAL.pdb

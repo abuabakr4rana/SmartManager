@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartManager.Models.AttendanceModel">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABAAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>AttendanceModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.DepartmentModel">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAAAAAAAIAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DepartmentModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.DesignationModel">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAIAAAgAAAAAAIAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DesignationModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.HolidayModel">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAEAgAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HolidayModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.LoginModel">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAEIACAIAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>LoginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.RoleModel">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>RoleModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.ShiftModel">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAJAAAAAAAAAIAEAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ShiftModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.AttendanceDettailModel">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAEAAAAYAKAAAAAAAAAAAAAAAAAAAAAgABAA=</HashCode>
+      <FileName>AttendanceDettailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.Common">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAIESAAAAAAAAAAAAAAAAAEAIBAAAAIAIAAA=</HashCode>
+      <FileName>Common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.SalaryModel">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAEAAAAAAAAAACAAAgAABAAAAAAAAAAAA=</HashCode>
+      <FileName>SalaryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.SalaryDetailModel">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAEAAAAIACAAAAEAAAAAAAABAAgAAAAABA=</HashCode>
+      <FileName>SalaryDetailModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartManager.Models.EmployeeModel">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEEAAAEAgEEAQJAAIEAAEABAAAAAAgACFgAgACAIAg=</HashCode>
+      <FileName>EmployeeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

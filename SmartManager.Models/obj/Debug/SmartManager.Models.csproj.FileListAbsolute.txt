@@ -1,0 +1,8 @@
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\bin\Debug\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\bin\Debug\SmartManager.Models.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\obj\Debug\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\obj\Debug\SmartManager.Models.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManager.Models\bin\Debug\SmartManager.Models.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManager.Models\bin\Debug\SmartManager.Models.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManager.Models\obj\Debug\SmartManager.Models.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManager.Models\obj\Debug\SmartManager.Models.pdb

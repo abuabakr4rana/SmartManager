@@ -1,0 +1,82 @@
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).exe.config
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).exe
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Form1.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Properties.Resources.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).csproj.GenerateResource.Cache
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).exe
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).csprojResolveAssemblyReference.cache
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.mdiMain.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.LoginUsers.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.BAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.DAL.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.BAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManager.Models.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.DAL.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Users.RecoverPassword.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Department.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Designation.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.EmployeeInfo.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Holidays.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Shift.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Employees.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Reports.ReportViewer.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.UI.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.Util.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\ZedGraph.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.xml
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.UI.xml
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.Util.xml
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.AutoAttendance.AutoAttendance.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceDetail.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceList.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceForm.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.AutoAttendance.TrainImages.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryDetail.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryForm.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryList.resources
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Reports.RepportViewer1.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).exe.config
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).exe
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).exe
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger(V.1).pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.UI.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.Util.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManager.Models.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.BAL.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.DAL.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\ZedGraph.dll
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManager.Models.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.BAL.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.xml
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.CV.UI.xml
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\Emgu.Util.xml
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\bin\Debug\SmartManger.DAL.pdb
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).csprojResolveAssemblyReference.cache
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceDetail.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceForm.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Attendance.AttendanceList.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.AutoAttendance.AutoAttendance.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.AutoAttendance.TrainImages.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Form1.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Department.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Designation.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.EmployeeInfo.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Employees.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Holidays.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.HRManger.Shift.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.mdiMain.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Properties.Resources.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Reports.ReportViewer.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Reports.RepportViewer1.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryDetail.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryForm.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Salary.SalaryList.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.LoginUsers.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger_V._1_.Users.RecoverPassword.resources
+F:\Projects\University Projects\SmartManger(V.1)\SmartManger(V.1)\obj\Debug\SmartManger(V.1).csproj.GenerateResource.Cache

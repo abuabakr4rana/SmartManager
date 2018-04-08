@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AD97779-3A51-41DB-8732-BE434D3C12D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartManger_V._1_</RootNamespace>
+    <AssemblyName>SmartManger%28V.1%29</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Emgu\libemgucv-windows-x64-2.2.1.1150\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.2.1.1150\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attendance\AttendanceDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\AttendanceDetail.Designer.cs">
+      <DependentUpon>AttendanceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\AttendanceForm.Designer.cs">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\AttendanceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance\AttendanceList.Designer.cs">
+      <DependentUpon>AttendanceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance\dsAttendance.cs">
+      <DependentUpon>dsAttendance.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Attendance\dsAttendance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutoAttendance\AutoAttendance .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoAttendance\AutoAttendance .Designer.cs">
+      <DependentUpon>AutoAttendance .cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoAttendance\EigenObjectRecognizer.cs" />
+    <Compile Include="AutoAttendance\TrainImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoAttendance\TrainImages.Designer.cs">
+      <DependentUpon>TrainImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\Designation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\Designation.Designer.cs">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\dsView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\EmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\EmployeeInfo.Designer.cs">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\Holidays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\Holidays.Designer.cs">
+      <DependentUpon>Holidays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRManger\Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HRManger\Shift.Designer.cs">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiMain.Designer.cs">
+      <DependentUpon>mdiMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\dsReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EmployeeList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RepportViewer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\RepportViewer1.Designer.cs">
+      <DependentUpon>RepportViewer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptAttendance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAttendance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSalaryList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSalaryList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Salary\dsSalary.cs">
+      <DependentUpon>dsSalary.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Salary\dsSalary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Salary\SalaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary\SalaryForm.Designer.cs">
+      <DependentUpon>SalaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary\SalaryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary\SalaryList.Designer.cs">
+      <DependentUpon>SalaryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salary\SalaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary\SalaryDetail.Designer.cs">
+      <DependentUpon>SalaryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LoginUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\LoginUsers.Designer.cs">
+      <DependentUpon>LoginUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\RecoverPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\RecoverPassword.Designer.cs">
+      <DependentUpon>RecoverPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validations.cs" />
+    <EmbeddedResource Include="Attendance\AttendanceDetail.resx">
+      <DependentUpon>AttendanceDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\AttendanceForm.resx">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance\AttendanceList.resx">
+      <DependentUpon>AttendanceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoAttendance\AutoAttendance .resx">
+      <DependentUpon>AutoAttendance .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoAttendance\TrainImages.resx">
+      <DependentUpon>TrainImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\Designation.resx">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\Holidays.resx">
+      <DependentUpon>Holidays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRManger\Shift.resx">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiMain.resx">
+      <DependentUpon>mdiMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\EmployeeList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeeList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RepportViewer1.resx">
+      <DependentUpon>RepportViewer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptAttendance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAttendance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSalaryList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSalaryList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary\SalaryDetail.resx">
+      <DependentUpon>SalaryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary\SalaryForm.resx">
+      <DependentUpon>SalaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary\SalaryList.resx">
+      <DependentUpon>SalaryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\LoginUsers.resx">
+      <DependentUpon>LoginUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\RecoverPassword.resx">
+      <DependentUpon>RecoverPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Attendance\dsAttendance.xsc">
+      <DependentUpon>dsAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="Attendance\dsAttendance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Attendance\dsAttendance.xss">
+      <DependentUpon>dsAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="HRManger\dsView.xsc">
+      <DependentUpon>dsView.xsd</DependentUpon>
+    </None>
+    <None Include="HRManger\dsView.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsView.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HRManger\dsView.xss">
+      <DependentUpon>dsView.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Salary\dsSalary.xsc">
+      <DependentUpon>dsSalary.xsd</DependentUpon>
+    </None>
+    <None Include="Salary\dsSalary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Salary\dsSalary.xss">
+      <DependentUpon>dsSalary.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartManager.Models\SmartManager.Models.csproj">
+      <Project>{de0ca486-3672-44ef-afbf-a79b238eaafa}</Project>
+      <Name>SmartManager.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartManger.BAL\SmartManger.BAL.csproj">
+      <Project>{6fe92dd7-fe87-48f5-9e53-7ca14a970f99}</Project>
+      <Name>SmartManger.BAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\dsReport.xsc">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsReport.xss">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\task-manager1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-computing-laptop-smartphone-tablet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company-building-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usergroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-Community-Help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palm-tree-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rank-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Avatar-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedestrian.png" />
+    <None Include="Resources\12212357_1044844588879212_2122891537_n - Copy.jpg" />
+    <None Include="Resources\reg 2.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\camera_lens.png" />
+    <None Include="Resources\1447781857_Save.ico" />
+    <None Include="Resources\1447781937_Delete.ico" />
+    <None Include="Resources\1447785234_Log Out.ico" />
+    <None Include="Resources\1447785440_folder-search.ico" />
+    <None Include="Resources\1447785616_DeleteRed.ico" />
+    <None Include="Resources\1447786173_system-search.ico" />
+    <None Include="Resources\1447781891_Synchronize.ico" />
+    <None Include="Resources\1447808404_preferences-system-time.ico" />
+    <None Include="Resources\Generate-tables-icon.png" />
+    <None Include="Resources\1447781912_Play.ico" />
+    <None Include="Resources\1447782104_Pause.ico" />
+    <None Include="Resources\1447781937_Delete1.ico" />
+    <None Include="Resources\images %285%29.jpg" />
+    <None Include="Resources\1448588835_7-Image capture.ico" />
+    <None Include="Resources\87200_record-corporate-video-with-an-ipad-small.jpg" />
+    <None Include="Resources\online-screen-recording4.jpg" />
+    <Content Include="ZedGraph.dll" />
+    <None Include="Resources\table-edit-icon.png" />
+    <Content Include="Emgu.CV.dll" />
+    <Content Include="Emgu.CV.GPU.dll" />
+    <Content Include="Emgu.CV.ML.dll" />
+    <Content Include="Emgu.CV.ML.xml" />
+    <Content Include="Emgu.CV.UI.dll" />
+    <Content Include="Emgu.CV.UI.xml" />
+    <Content Include="Emgu.CV.xml" />
+    <Content Include="Emgu.Util.xml" />
+    <Content Include="opencv_calib3d220.dll" />
+    <Content Include="opencv_contrib220.dll" />
+    <Content Include="opencv_core220.dll" />
+    <Content Include="opencv_features2d220.dll" />
+    <Content Include="opencv_ffmpeg220.dll" />
+    <Content Include="opencv_flann220.dll" />
+    <Content Include="opencv_gpu220.dll" />
+    <Content Include="opencv_highgui220.dll" />
+    <Content Include="opencv_imgproc220.dll" />
+    <Content Include="opencv_legacy220.dll" />
+    <Content Include="opencv_ml220.dll" />
+    <Content Include="opencv_objdetect220.dll" />
+    <Content Include="opencv_video220.dll" />
+    <Content Include="users.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

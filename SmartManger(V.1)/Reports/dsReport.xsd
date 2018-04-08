@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReport" targetNamespace="http://tempuri.org/dsReport.xsd" xmlns:mstns="http://tempuri.org/dsReport.xsd" xmlns="http://tempuri.org/dsReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SmartManagerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SmartManagerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SmartManger_V._1_.Properties.Settings.GlobalReference.Default.SmartManagerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rEmployeeListTableAdapter" GeneratorDataComponentClassName="rEmployeeListTableAdapter" Name="rEmployeeList" UserDataComponentName="rEmployeeListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SmartManagerConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Employee.Code, Employee.EmployeeId, Employee.FirstName + ' ' + Employee.LastName AS EmployeeName, Department.DeptId, Department.DeptName, Shift.ShiftName, Shift.ShiftId, Designation.DesgId, 
+                         Designation.DesgName
+FROM            Employee LEFT OUTER JOIN
+                         Department ON Employee.DepartmentID = Department.DeptId LEFT OUTER JOIN
+                         Shift ON Employee.ShiftID = Shift.ShiftId LEFT OUTER JOIN
+                         Designation ON Employee.DesignationID = Designation.DesgId AND Employee.DesignationID = Designation.DesgId
+order by Employee.Code</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="EmployeeId" DataSetColumn="EmployeeId" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="DeptId" DataSetColumn="DeptId" />
+              <Mapping SourceColumn="DeptName" DataSetColumn="DeptName" />
+              <Mapping SourceColumn="ShiftName" DataSetColumn="ShiftName" />
+              <Mapping SourceColumn="ShiftId" DataSetColumn="ShiftId" />
+              <Mapping SourceColumn="DesgId" DataSetColumn="DesgId" />
+              <Mapping SourceColumn="DesgName" DataSetColumn="DesgName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vAttendanceListTableAdapter" GeneratorDataComponentClassName="vAttendanceListTableAdapter" Name="vAttendanceList" UserDataComponentName="vAttendanceListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SmartManagerConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Employee.FirstName + ' ' + Employee.LastName AS EmployeeName, Designation.DesgName, Department.DeptName, AttendanceDetail.Status, AttendanceDetail.TimeIn, AttendanceDetail.TimeOut, 
+                         Attendance.AttendanceDate
+FROM            AttendanceDetail LEFT OUTER JOIN
+                         Attendance ON AttendanceDetail.AttendanceId = Attendance.AttendanceId LEFT OUTER JOIN
+                         Employee ON AttendanceDetail.EmployeeId = Employee.EmployeeId LEFT OUTER JOIN
+                         Department ON Employee.DepartmentID = Department.DeptId LEFT OUTER JOIN
+                         Designation ON Employee.DesignationID = Designation.DesgId
+
+						 Where (Employee.EmployeeId =@EmpId OR 0=@EmpId) AND (Attendance.AttendanceDate Between @start AND @End)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpId" ColumnName="EmployeeId" DataSourceName="SmartManager.dbo.Employee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmployeeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="start" ColumnName="AttendanceDate" DataSourceName="SmartManager.dbo.Attendance" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@start" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="AttendanceDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="End" ColumnName="AttendanceDate" DataSourceName="SmartManager.dbo.Attendance" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@End" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="AttendanceDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="DesgName" DataSetColumn="DesgName" />
+              <Mapping SourceColumn="DeptName" DataSetColumn="DeptName" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="TimeIn" DataSetColumn="TimeIn" />
+              <Mapping SourceColumn="TimeOut" DataSetColumn="TimeOut" />
+              <Mapping SourceColumn="AttendanceDate" DataSetColumn="AttendanceDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rSalaryListTableAdapter" GeneratorDataComponentClassName="rSalaryListTableAdapter" Name="rSalaryList" UserDataComponentName="rSalaryListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SmartManagerConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Salary.SalaryDate, Department.DeptName, Employee.FirstName + ' ' + Employee.LastName AS EmployeeName, SalaryDetail.Presents, SalaryDetail.Absents, SalaryDetail.Leaves, SalaryDetail.Salary, 
+                         SalaryDetail.Deductions, SalaryDetail.Total, SalaryDetail.AbsentDeduction
+FROM            Employee LEFT OUTER JOIN
+                         Department ON Employee.DepartmentID = Department.DeptId RIGHT OUTER JOIN
+                         SalaryDetail ON Employee.EmployeeId = SalaryDetail.EmployeeId LEFT OUTER JOIN
+                         Salary ON SalaryDetail.SalaryId = Salary.SalaryId
+WHERE        (Salary.SalaryDate BETWEEN @start AND @end) AND (Employee.EmployeeId = @EmpId) OR  (0 = @EmpId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="start" ColumnName="SalaryDate" DataSourceName="SmartManager.dbo.Salary" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@start" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="SalaryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="end" ColumnName="SalaryDate" DataSourceName="SmartManager.dbo.Salary" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@end" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="SalaryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="EmpId" ColumnName="EmployeeId" DataSourceName="SmartManager.dbo.Employee" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@EmpId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="EmployeeId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SalaryDate" DataSetColumn="SalaryDate" />
+              <Mapping SourceColumn="DeptName" DataSetColumn="DeptName" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="Presents" DataSetColumn="Presents" />
+              <Mapping SourceColumn="Absents" DataSetColumn="Absents" />
+              <Mapping SourceColumn="Leaves" DataSetColumn="Leaves" />
+              <Mapping SourceColumn="Salary" DataSetColumn="Salary" />
+              <Mapping SourceColumn="Deductions" DataSetColumn="Deductions" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="AbsentDeduction" DataSetColumn="AbsentDeduction" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReport" msprop:Generator_UserDSName="dsReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rEmployeeList" msprop:Generator_TableClassName="rEmployeeListDataTable" msprop:Generator_TableVarName="tablerEmployeeList" msprop:Generator_RowChangedName="rEmployeeListRowChanged" msprop:Generator_TablePropName="rEmployeeList" msprop:Generator_RowDeletingName="rEmployeeListRowDeleting" msprop:Generator_RowChangingName="rEmployeeListRowChanging" msprop:Generator_RowEvHandlerName="rEmployeeListRowChangeEventHandler" msprop:Generator_RowDeletedName="rEmployeeListRowDeleted" msprop:Generator_RowClassName="rEmployeeListRow" msprop:Generator_UserTableName="rEmployeeList" msprop:Generator_RowEvArgName="rEmployeeListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:int" minOccurs="0" />
+              <xs:element name="EmployeeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEmployeeId" msprop:Generator_ColumnPropNameInRow="EmployeeId" msprop:Generator_ColumnPropNameInTable="EmployeeIdColumn" msprop:Generator_UserColumnName="EmployeeId" type="xs:int" />
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeptId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDeptId" msprop:Generator_ColumnPropNameInRow="DeptId" msprop:Generator_ColumnPropNameInTable="DeptIdColumn" msprop:Generator_UserColumnName="DeptId" type="xs:int" minOccurs="0" />
+              <xs:element name="DeptName" msprop:Generator_ColumnVarNameInTable="columnDeptName" msprop:Generator_ColumnPropNameInRow="DeptName" msprop:Generator_ColumnPropNameInTable="DeptNameColumn" msprop:Generator_UserColumnName="DeptName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShiftName" msprop:Generator_ColumnVarNameInTable="columnShiftName" msprop:Generator_ColumnPropNameInRow="ShiftName" msprop:Generator_ColumnPropNameInTable="ShiftNameColumn" msprop:Generator_UserColumnName="ShiftName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShiftId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnShiftId" msprop:Generator_ColumnPropNameInRow="ShiftId" msprop:Generator_ColumnPropNameInTable="ShiftIdColumn" msprop:Generator_UserColumnName="ShiftId" type="xs:int" minOccurs="0" />
+              <xs:element name="DesgId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDesgId" msprop:Generator_ColumnPropNameInRow="DesgId" msprop:Generator_ColumnPropNameInTable="DesgIdColumn" msprop:Generator_UserColumnName="DesgId" type="xs:int" minOccurs="0" />
+              <xs:element name="DesgName" msprop:Generator_ColumnVarNameInTable="columnDesgName" msprop:Generator_ColumnPropNameInRow="DesgName" msprop:Generator_ColumnPropNameInTable="DesgNameColumn" msprop:Generator_UserColumnName="DesgName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vAttendanceList" msprop:Generator_TableClassName="vAttendanceListDataTable" msprop:Generator_TableVarName="tablevAttendanceList" msprop:Generator_RowChangedName="vAttendanceListRowChanged" msprop:Generator_TablePropName="vAttendanceList" msprop:Generator_RowDeletingName="vAttendanceListRowDeleting" msprop:Generator_RowChangingName="vAttendanceListRowChanging" msprop:Generator_RowEvHandlerName="vAttendanceListRowChangeEventHandler" msprop:Generator_RowDeletedName="vAttendanceListRowDeleted" msprop:Generator_RowClassName="vAttendanceListRow" msprop:Generator_UserTableName="vAttendanceList" msprop:Generator_RowEvArgName="vAttendanceListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DesgName" msprop:Generator_ColumnVarNameInTable="columnDesgName" msprop:Generator_ColumnPropNameInRow="DesgName" msprop:Generator_ColumnPropNameInTable="DesgNameColumn" msprop:Generator_UserColumnName="DesgName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeptName" msprop:Generator_ColumnVarNameInTable="columnDeptName" msprop:Generator_ColumnPropNameInRow="DeptName" msprop:Generator_ColumnPropNameInTable="DeptNameColumn" msprop:Generator_UserColumnName="DeptName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeIn" msprop:Generator_ColumnVarNameInTable="columnTimeIn" msprop:Generator_ColumnPropNameInRow="TimeIn" msprop:Generator_ColumnPropNameInTable="TimeInColumn" msprop:Generator_UserColumnName="TimeIn" type="xs:duration" minOccurs="0" />
+              <xs:element name="TimeOut" msprop:Generator_ColumnVarNameInTable="columnTimeOut" msprop:Generator_ColumnPropNameInRow="TimeOut" msprop:Generator_ColumnPropNameInTable="TimeOutColumn" msprop:Generator_UserColumnName="TimeOut" type="xs:duration" minOccurs="0" />
+              <xs:element name="AttendanceDate" msprop:Generator_ColumnVarNameInTable="columnAttendanceDate" msprop:Generator_ColumnPropNameInRow="AttendanceDate" msprop:Generator_ColumnPropNameInTable="AttendanceDateColumn" msprop:Generator_UserColumnName="AttendanceDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rSalaryList" msprop:Generator_TableClassName="rSalaryListDataTable" msprop:Generator_TableVarName="tablerSalaryList" msprop:Generator_TablePropName="rSalaryList" msprop:Generator_RowDeletingName="rSalaryListRowDeleting" msprop:Generator_RowChangingName="rSalaryListRowChanging" msprop:Generator_RowEvHandlerName="rSalaryListRowChangeEventHandler" msprop:Generator_RowDeletedName="rSalaryListRowDeleted" msprop:Generator_UserTableName="rSalaryList" msprop:Generator_RowChangedName="rSalaryListRowChanged" msprop:Generator_RowEvArgName="rSalaryListRowChangeEvent" msprop:Generator_RowClassName="rSalaryListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalaryDate" msprop:Generator_ColumnVarNameInTable="columnSalaryDate" msprop:Generator_ColumnPropNameInRow="SalaryDate" msprop:Generator_ColumnPropNameInTable="SalaryDateColumn" msprop:Generator_UserColumnName="SalaryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeptName" msprop:Generator_ColumnVarNameInTable="columnDeptName" msprop:Generator_ColumnPropNameInRow="DeptName" msprop:Generator_ColumnPropNameInTable="DeptNameColumn" msprop:Generator_UserColumnName="DeptName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Presents" msprop:Generator_ColumnVarNameInTable="columnPresents" msprop:Generator_ColumnPropNameInRow="Presents" msprop:Generator_ColumnPropNameInTable="PresentsColumn" msprop:Generator_UserColumnName="Presents" type="xs:int" minOccurs="0" />
+              <xs:element name="Absents" msprop:Generator_ColumnVarNameInTable="columnAbsents" msprop:Generator_ColumnPropNameInRow="Absents" msprop:Generator_ColumnPropNameInTable="AbsentsColumn" msprop:Generator_UserColumnName="Absents" type="xs:int" minOccurs="0" />
+              <xs:element name="Leaves" msprop:Generator_ColumnVarNameInTable="columnLeaves" msprop:Generator_ColumnPropNameInRow="Leaves" msprop:Generator_ColumnPropNameInTable="LeavesColumn" msprop:Generator_UserColumnName="Leaves" type="xs:int" minOccurs="0" />
+              <xs:element name="Salary" msprop:Generator_ColumnVarNameInTable="columnSalary" msprop:Generator_ColumnPropNameInRow="Salary" msprop:Generator_ColumnPropNameInTable="SalaryColumn" msprop:Generator_UserColumnName="Salary" type="xs:double" minOccurs="0" />
+              <xs:element name="Deductions" msprop:Generator_ColumnVarNameInTable="columnDeductions" msprop:Generator_ColumnPropNameInRow="Deductions" msprop:Generator_ColumnPropNameInTable="DeductionsColumn" msprop:Generator_UserColumnName="Deductions" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:double" minOccurs="0" />
+              <xs:element name="AbsentDeduction" msprop:Generator_ColumnVarNameInTable="columnAbsentDeduction" msprop:Generator_ColumnPropNameInRow="AbsentDeduction" msprop:Generator_ColumnPropNameInTable="AbsentDeductionColumn" msprop:Generator_UserColumnName="AbsentDeduction" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

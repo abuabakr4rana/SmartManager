@@ -1,0 +1,5 @@
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\bin\Release\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\bin\Release\SmartManager.Models.pdb
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\obj\Release\SmartManager.Models.csprojResolveAssemblyReference.cache
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\obj\Release\SmartManager.Models.dll
+F:\Final Year Project\Final\SmartManger(V.1)\SmartManager.Models\obj\Release\SmartManager.Models.pdb
